@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo A4B | SDR com IA para Empresas</title>
+  <meta name="description" content="Vendedor digital com IA que filtra leads, faz follow-up automático, remarketing e SDR — no WhatsApp da sua empresa, 24 horas por dia.">
+  <meta property="og:title" content="Grupo A4B | SDR com IA para Empresas">
+  <meta property="og:description" content="Vendedor digital com IA que filtra leads, faz follow-up automático, remarketing e SDR — no WhatsApp da sua empresa, 24 horas por dia.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="logo">Grupo <span>A4B</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-primary" data-open-modal>Agendar Demonstração</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose" aria-label="Fechar">&times;</button>
+    <a href="#home">Home</a>
+    <a href="#solucoes">Soluções</a>
+    <a href="#como-funciona">Como Funciona</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#contato">Contato</a>
+    <a href="#" class="btn btn-primary" data-open-modal style="margin-top:16px">Agendar Demonstração</a>
+  </div>
+
+  <!-- LEAD MODAL -->
+  <div class="modal-overlay" id="leadModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalClose">&times;</button>
+      <div class="modal-header">
+        <h3>Agende sua demonstração gratuita</h3>
+        <p>Preencha os dados abaixo e entraremos em contato em até 24h.</p>
+      </div>
+      <form id="leadForm" autocomplete="on">
+        <div class="form-group">
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="telefone">Telefone / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Nome da empresa</label>
+          <input type="text" id="empresa" name="empresa" placeholder="Sua empresa" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Agendar Demonstração</button>
+        <div id="formFeedback" class="form-feedback"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-badge" data-animate="fadeInDown">
+        <span class="dot"></span>
+        Vendas no Piloto Automático
+      </div>
+      <h1 data-animate="fadeInUp">Mais leads qualificados e vendas fechadas. Zero esforço extra.</h1>
+      <div class="hero-rotating-wrapper">
+        <span class="hero-rotating-text" id="rotatingText">filtragem de leads</span>
+      </div>
+      <p data-animate="fadeInUp" data-delay="0.3">Multiplique os fechamentos da sua equipe comercial com um processo automático que atende, filtra e qualifica clientes 24 horas por dia, 7 dias por semana.</p>
+      <div class="hero-ctas" data-animate="fadeInUp" data-delay="0.5">
+        <a href="#" class="btn btn-primary" data-open-modal>Agendar Demonstração Gratuita</a>
+        <a href="#como-funciona" class="btn btn-outline">Ver Como Funciona ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
+    <div class="container">
+      <p>✦ Qualificação ativa <strong>24h</strong> — WhatsApp · Instagram · CRM</p>
+    </div>
+  </section>
+
+  <!-- CLIENTS MARQUEE -->
+  <section class="clients-marquee">
+    <div class="container text-center">
+      <p class="marquee-title">Empresas que já otimizam suas vendas conosco:</p>
+    </div>
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        <!-- Duplicated for infinite scroll -->
+        <img src="img/1.png" alt="Client Logo 1">
+        <img src="img/2.png" alt="Client Logo 2">
+        <img src="img/3.png" alt="Client Logo 3">
+        <img src="img/4.png" alt="Client Logo 4">
+        <img src="img/5.png" alt="Client Logo 5">
+        <img src="img/6.png" alt="Client Logo 6">
+        <img src="img/7.png" alt="Client Logo 7">
+        <img src="img/8.png" alt="Client Logo 8">
+        <img src="img/9.png" alt="Client Logo 9">
+        <!-- Duplicate set -->
+        <img src="img/1.png" alt="Client Logo 1">
+        <img src="img/2.png" alt="Client Logo 2">
+        <img src="img/3.png" alt="Client Logo 3">
+        <img src="img/4.png" alt="Client Logo 4">
+        <img src="img/5.png" alt="Client Logo 5">
+        <img src="img/6.png" alt="Client Logo 6">
+        <img src="img/7.png" alt="Client Logo 7">
+        <img src="img/8.png" alt="Client Logo 8">
+        <img src="img/9.png" alt="Client Logo 9">
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS -->
+  <section class="pain-points" id="dores">
+    <div class="container text-center">
+      <div class="pain-header">
+        <span class="section-label" data-animate="fadeIn">O problema</span>
+        <h2 class="section-title" data-animate="fadeInUp">Você gera demanda, mas o dinheiro fica na mesa.</h2>
+        <p class="section-subtitle" data-animate="fadeInUp" data-delay="0.15">Seu comercial está sobrecarregado: respondendo curiosos no WhatsApp enquanto os verdadeiros compradores esfriam por falta de resposta rápida.</p>
+      </div>
+      
+      <div class="pain-content" data-animate="fadeInUp" data-delay="0.2">
+        <div class="pain-list">
+          <div class="pain-item">
+            <div class="pain-icon">✕</div>
+            <p>Leads entram e ninguém responde a tempo. O concorrente responde primeiro e leva o cliente.</p>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">✕</div>
+            <p>O vendedor desiste do lead no primeiro "vou pensar" — e nunca mais faz follow-up.</p>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">✕</div>
+            <p>Você gasta com tráfego pago, mas os leads ficam parados no CRM sem receber nenhuma mensagem.</p>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">✕</div>
+            <p>Contrata SDR humano, treina por meses, e ele pede demissão na hora que começa a performar.</p>
+          </div>
+          <div class="pain-item">
+            <div class="pain-icon">✕</div>
+            <p>Não tem como escalar atendimento sem multiplicar equipe (e custos).</p>
+          </div>
+        </div>
+        <div class="pain-image-wrapper">
+          <img src="img/problema.png" alt="Leads perdidos no CRM e clientes ignorados">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION (UNIQUE MECHANISM) -->
+  <section class="value-prop" id="solucoes">
+    <div class="container text-center">
+      <span class="section-label" data-animate="fadeIn">A Solução</span>
+      <h2 class="section-title" data-animate="fadeInUp">Não é sobre ter mais ferramentas.<br>É sobre extrair dinheiro de cada lead gerado.</h2>
+      <p class="section-subtitle" data-animate="fadeInUp" data-delay="0.2">Implementamos uma operação silenciosa que garante que 100% dos seus leads recebam atendimento imediato, qualificação profunda e follow-up implacável — levando apenas os prontos para comprar até você.</p>
+    </div>
+  </section>
+
+  <!-- FEATURES (4 PILLARS) -->
+  <section class="features">
+    <div class="container text-center">
+      <span class="section-label" data-animate="fadeIn">Os Pilares</span>
+      <h2 class="section-title" data-animate="fadeInUp">Sua nova máquina de conversão.</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Filtragem de Curiosos</h3>
+          <p>O sistema qualifica cada lead em tempo real, separando os curiosos dos compradores reais — antes de tomar o tempo do seu time comercial.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Follow-up Implacável</h3>
+          <p>Lead disse "vou pensar"? A operação contorna a objeção, faz o acompanhamento estratégico e reabre a conversa na hora que ele estiver pronto para comprar.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📢</div>
+          <h3>Resgate de Vendas</h3>
+          <p>Reativamos contatos frios da sua base com mensagens personalizadas e ofertas estratégicas que trazem o dinheiro que estava esquecido no CRM de volta.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3>Resposta Imediata</h3>
+          <p>Um sistema de atendimento que responde em segundos, agenda as reuniões na sua agenda e conduz o lead pelo funil — garantindo que o concorrente nunca roube a venda por tempo de resposta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (PROCESS) -->
+  <section class="integration" id="como-funciona">
+    <div class="container text-center">
+      <span class="section-label" data-animate="fadeIn">Como funciona</span>
+      <h2 class="section-title" data-animate="fadeInUp">Da implementação ao resultado em 4 etapas</h2>
+      <p class="section-subtitle" data-animate="fadeInUp" data-delay="0.2">Não vendemos software. Implementamos uma operação comercial com IA sob medida para a sua empresa.</p>
+      <div class="roadmap-container" id="roadmap" style="margin-top:48px; text-align:left;">
+        <!-- Step 1 -->
+        <div class="roadmap-step active" data-step="1">
+          <div class="step-node"></div>
+          <div class="step-content">
+            <span class="step-number">Etapa 01</span>
+            <h3>Mapeamento de Oportunidades</h3>
+            <div class="step-body">
+              <p>Analisamos seu produto, seu público-alvo e onde você está perdendo dinheiro hoje no processo de vendas atual.</p>
+              <button class="btn btn-outline btn-sm step-unlock-btn">Desbloquear Etapa 02 ↓</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="roadmap-step locked" data-step="2">
+          <div class="step-node"></div>
+          <div class="step-content">
+            <span class="step-number">Etapa 02</span>
+            <h3>Construção da Máquina</h3>
+            <div class="step-body">
+              <p>Criamos um processo automático com a linguagem e os casos reais da sua empresa — não usamos templates genéricos, construímos um funil que converte no seu nicho.</p>
+              <button class="btn btn-outline btn-sm step-unlock-btn">Desbloquear Etapa 03 ↓</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="roadmap-step locked" data-step="3">
+          <div class="step-node"></div>
+          <div class="step-content">
+            <span class="step-number">Etapa 03</span>
+            <h3>Operação Silenciosa</h3>
+            <div class="step-body">
+              <p>Implementamos a máquina diretamente no WhatsApp da empresa e no seu CRM. Os leads começam a ser atendidos instantaneamente sem sua equipe ter nenhum trabalho a mais.</p>
+              <button class="btn btn-outline btn-sm step-unlock-btn">Desbloquear Etapa Final ↓</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="roadmap-step locked" data-step="4">
+          <div class="step-node"></div>
+          <div class="step-content">
+            <span class="step-number">Etapa 04</span>
+            <h3>Escala de Fechamentos</h3>
+            <div class="step-body">
+              <p>O trabalho não para no lançamento. Monitoramos os leads que estão esfriando, ajustamos as cadências e otimizamos o funil de forma contínua para aumentar sua taxa de lucro a cada mês.</p>
+              <div class="step-final-cta" style="margin-top:20px;">
+                <p style="color:#fff; font-weight:600; margin-bottom:12px;">Pronto para ter essa estrutura rodando na sua empresa?</p>
+                <a href="#" class="btn btn-primary" data-open-modal>Agendar Demonstração Agora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE DEMO SECTION -->
+  <section class="scheduling">
+    <div class="container">
+      <div class="scheduling-content">
+        <div class="scheduling-text">
+          <span class="section-label" data-animate="fadeIn">Teste ao vivo</span>
+          <h2 class="section-title" data-animate="fadeInLeft">Veja a máquina de qualificação rodando na prática.</h2>
+          <p data-animate="fadeInLeft" data-delay="0.2">Faça o teste abaixo e veja como a nossa operação filtra e conduz os curiosos até o agendamento final.</p>
+          <a href="#" class="btn btn-primary" data-open-modal data-animate="fadeInLeft" data-delay="0.3">Agendar Demonstração</a>
+        </div>
+        <div class="scheduling-visual" data-animate="fadeInRight" data-delay="0.2">
+          <div class="chat-mock" id="liveChatMock">
+            <div class="chat-messages" id="chatMessages">
+              <div class="chat-msg bot">Olá! Sou a IA do Grupo A4B 👋 Como posso ajudar?</div>
+            </div>
+            <div class="chat-typing" id="chatTyping" style="display:none;">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <div class="chat-input-area">
+              <input type="text" id="chatInput" placeholder="Digite aqui..." autocomplete="off">
+              <button id="chatSendBtn" aria-label="Enviar">➤</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="results" id="resultados">
+    <div class="container">
+      <div class="results-header">
+        <span class="section-label" data-animate="fadeIn">Empresários que pararam de perder vendas</span>
+        <h2 class="section-title" data-animate="fadeInUp">Resultados Reais</h2>
+        <p class="section-subtitle" data-animate="fadeInUp" data-delay="0.15" style="margin:0 auto">De empresas que implementaram nosso SDR com IA e transformaram seu comercial</p>
+      </div>
+
+      <!-- Case 1 -->
+      <div class="case-study">
+        <div class="case-header">
+          <span class="case-location">📍 Porto Alegre · Imobiliária Alto Padrão</span>
+          <span class="case-result-badge">+80% de conversão em leads</span>
+        </div>
+        <div class="case-grid">
+          <div class="case-block">
+            <h4>Antes</h4>
+            <p>200+ leads por mês entrando no WhatsApp sem resposta. Corretores demoravam horas para atender. 90% dos leads esfriavam antes do primeiro contato.</p>
+          </div>
+          <div class="case-block">
+            <h4>O que implementamos</h4>
+            <ul>
+              <li>IA para responder em &lt;20 segundos, 24/7</li>
+              <li>Filtragem automática separando curiosos de compradores reais</li>
+              <li>Follow-up inteligente para leads que disseram "vou pensar"</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <h4>Resultado</h4>
+            <p>Em 3 meses, a imobiliária aumentou 80% a conversão de leads em visitas e gera R$150.000 de lucro mensal no piloto automático.</p>
+            <div class="case-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="case-study">
+        <div class="case-header">
+          <span class="case-location">📍 Florianópolis · Lançamento Imobiliário</span>
+          <span class="case-result-badge">R$10MM+ em VGV gerado</span>
+        </div>
+        <div class="case-grid">
+          <div class="case-block">
+            <h4>Antes</h4>
+            <p>SDR humano custava R$5k/mês + encargos, demorava 3 meses para treinar e o turnover era altíssimo. Leads do tráfego pago ficavam sem follow-up.</p>
+          </div>
+          <div class="case-block">
+            <h4>O que implementamos</h4>
+            <ul>
+              <li>SDR com IA dedicado ao lançamento, treinado com playbook comercial</li>
+              <li>Remarketing automático para leads frios do último mês</li>
+              <li>Agendamento direto na agenda dos corretores via IA</li>
+            </ul>
+          </div>
+          <div class="case-block">
+            <h4>Resultado</h4>
+            <p>Em 6 meses, a imobiliária fez VGV superior a R$10MM e ganhou prêmio de destaque de vendas do empreendimento.</p>
+            <div class="case-stars">⭐⭐⭐⭐⭐</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METRICS -->
+  <section class="metrics">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric">
+          <h3>&lt;2<span style="font-size:0.5em;font-weight:400">s</span></h3>
+          <p>Tempo de resposta imediato</p>
+        </div>
+        <div class="metric">
+          <h3><span class="counter" data-target="84">0</span>%</h3>
+          <p>Leads não qualificados filtrados</p>
+        </div>
+        <div class="metric">
+          <h3>+<span class="counter" data-target="80">0</span>%</h3>
+          <p>Aumento em agendamentos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="sobre">
+    <div class="container">
+      <span class="section-label" data-animate="fadeIn">Quem somos</span>
+      <h2 class="section-title" data-animate="fadeInUp">Sobre o Grupo A4B</h2>
+      <div class="about-content">
+        <div class="about-text" data-animate="fadeInLeft">
+          <p class="highlight-text">Nós implementamos ecossistemas de vendas focados em extrair 100% de lucro da sua base de contatos.</p>
+          <p>O Grupo A4B não vende apenas tecnologia. Nós atuamos no coração do <strong>Growth Corporativo</strong>, construindo operações comerciais inteligentes que rodam no WhatsApp e no CRM da sua empresa.</p>
+          <p>Nosso maior objetivo é acabar definitivamente com os gargalos comerciais do seu negócio — aqueles momentos onde você perde vendas porque ninguém atendeu, ou porque o lead esfriou.</p>
+          <p>Fazemos isso através de automações profundas e sistemas inteligentes. Entregamos a máquina rodando para a sua equipe apenas fechar os negócios prontos.</p>
+        </div>
+        <div class="about-ceo">
+          <div class="ceo-photo">
+            <img src="img/fundador.png" alt="Fundador do Grupo A4B">
+          </div>
+          <div class="ceo-name">Thiago Pedrosa</div>
+          <div class="ceo-role">Fundador</div>
+          <p class="ceo-bio">Trabalhando na interseção de Growth e vendas corporativas, meu foco é destruir os gargalos que impedem sua empresa de escalar. Leads que ninguém responde, vendedores sobrecarregados e oportunidades perdidas acabam aqui. Resolvo isso implementando automações e IA que vendem enquanto você dorme.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final" id="contato">
+    <div class="container">
+      <span class="section-label" data-animate="fadeIn">Seu próximo cliente está esperando resposta</span>
+      <h2 class="section-title" data-animate="fadeInUp">Comece agora. Agende uma demonstração.</h2>
+      <p class="section-subtitle" data-animate="fadeInUp" data-delay="0.2">Sem compromisso. Veja na prática como a IA pode transformar o comercial da sua empresa.</p>
+      <div data-animate="fadeInUp" data-delay="0.3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <a href="#" class="btn btn-primary" data-open-modal>Agendar Demonstração Gratuita</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Grupo A4B 2026 — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="#" class="whatsapp-float" id="whatsapp-btn" data-open-modal aria-label="Agendar Demonstração">
+    💬
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>

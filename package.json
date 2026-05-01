@@ -1,0 +1,13 @@
+{
+  "name": "grupo-a4b-site",
+  "version": "1.0.0",
+  "description": "Grupo A4B — Landing Page com SDR IA + Painel de Leads",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
