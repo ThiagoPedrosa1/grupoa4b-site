@@ -101,14 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // O Make costuma retornar 200 OK com o texto "Accepted"
       if (res.ok) {
-        window.location.href = 'obrigado.html';
+        window.location.href = '/obrigado';
       } else {
         throw new Error('Erro na requisição para o Make');
       }
     } catch (err) {
       // Em caso de erro (como falta de conexão ou webhook pendente), redirecionamos mesmo assim
       // para garantir que a experiência do usuário não trave e o pixel/track rode.
-      window.location.href = 'obrigado.html';
+      window.location.href = '/obrigado';
     }
 
     submitBtn.textContent = originalText;

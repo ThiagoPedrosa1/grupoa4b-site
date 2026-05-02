@@ -1,5 +1,6 @@
 {
-  "buildCommand": "echo 'No build required'",
-  "outputDirectory": ".",
-  "framework": null
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/obrigado", "destination": "/obrigado.html" }
+  ]
 }
