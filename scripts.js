@@ -166,15 +166,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1200);
     } else if (chatStep === 2) {
       simulateBotTyping(() => {
-        addChatMessage('Entendo. Com a nossa IA, esses leads seriam filtrados, qualificados e acompanhados automaticamente. Posso te mostrar isso em uma demonstração gratuita?', 'bot');
+        addChatMessage('Entendo. Com a nossa IA, esses leads seriam filtrados, qualificados e acompanhados automaticamente. Posso te mostrar isso em um diagnóstico gratuito por call?', 'bot');
         setTimeout(() => {
-          addChatMessage('<button class="btn-primary" data-open-modal>Agendar Demonstração</button>', 'bot', true);
+          addChatMessage('<button class="btn-primary" data-open-modal>Agendar Diagnóstico</button>', 'bot', true);
           // Attach event listener to new button
           const newBtn = chatMessages.querySelector('button[data-open-modal]');
           if (newBtn) newBtn.addEventListener('click', openModal);
         }, 500);
         chatStep++;
-        chatInput.placeholder = "Demonstração liberada acima ☝️";
+        chatInput.placeholder = "Diagnóstico liberado acima ☝️";
         chatInput.disabled = true;
       }, 2000);
     }
