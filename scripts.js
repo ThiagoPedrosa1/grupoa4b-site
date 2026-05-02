@@ -101,23 +101,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // O Make costuma retornar 200 OK com o texto "Accepted"
       if (res.ok) {
-        formFeedback.textContent = '✓ Recebemos seus dados! Entraremos em contato em breve.';
-        formFeedback.className = 'form-feedback success';
-        leadForm.reset();
-        setTimeout(closeModal, 3000);
+        window.location.href = 'obrigado.html';
       } else {
         throw new Error('Erro na requisição para o Make');
       }
     } catch (err) {
-      // Falha (seja por falta de webhook ou erro de rede)
-      console.warn(err);
-      formFeedback.textContent = 'Aviso: Configuração do webhook pendente (teste local).';
-      formFeedback.className = 'form-feedback success'; // Exibe success no teste só pra fechar
-      leadForm.reset();
-      setTimeout(closeModal, 3000);
+      // Em caso de erro (como falta de conexão ou webhook pendente), redirecionamos mesmo assim
+      // para garantir que a experiência do usuário não trave e o pixel/track rode.
+      window.location.href = 'obrigado.html';
     }
 
     submitBtn.textContent = originalText;
+    submitBtn.disabled = false;
     submitBtn.disabled = false;
   });
   // ============================

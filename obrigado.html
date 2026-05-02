@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo A4B | Cadastro Confirmado!</title>
+  <meta name="description" content="Obrigado por seu interesse. Nossa equipe (ou nossa IA) entrará em contato em breve.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <style>
+    .thanks-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .thanks-card {
+      max-width: 600px;
+      padding: 60px 40px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      backdrop-filter: blur(20px);
+    }
+    .thanks-icon {
+      font-size: 4rem;
+      margin-bottom: 24px;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    .thanks-card h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      letter-spacing: -1px;
+    }
+    .thanks-card p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .thanks-steps {
+      text-align: left;
+      margin-bottom: 32px;
+    }
+    .thanks-steps h3 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .thanks-step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .step-num {
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      color: #000;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+    }
+    .step-txt {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+<body class="bg-primary">
+
+  <section class="thanks-section">
+    <div class="container">
+      <div class="thanks-card animate__animated animate__fadeInUp">
+        <div class="thanks-icon">✅</div>
+        <h1>Solicitação Recebida!</h1>
+        <p>Parabéns por dar o primeiro passo para acabar com os gargalos comerciais da sua empresa.</p>
+        
+        <div class="thanks-steps">
+          <h3>Próximos Passos:</h3>
+          <div class="thanks-step">
+            <div class="step-num">1</div>
+            <div class="step-txt">Nossa IA está processando seus dados agora mesmo.</div>
+          </div>
+          <div class="thanks-step">
+            <div class="step-num">2</div>
+            <div class="step-txt">Você receberá uma mensagem no WhatsApp em alguns instantes.</div>
+          </div>
+          <div class="thanks-step">
+            <div class="step-num">3</div>
+            <div class="step-txt">Lá, você poderá escolher o melhor horário para nossa demonstração.</div>
+          </div>
+        </div>
+
+        <a href="index.html" class="btn btn-outline">Voltar para o site</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
