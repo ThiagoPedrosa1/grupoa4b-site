@@ -156,20 +156,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Bot Script Logic
     if (chatStep === 0) {
       simulateBotTyping(() => {
-        addChatMessage('Certo! E hoje, como vocês qualificam os leads que chegam — de forma manual ou já têm alguma automação?', 'bot');
+        addChatMessage('Entendido! Esse gargalo é mais na área comercial, na operação interna ou nos dois?', 'bot');
         chatStep++;
       }, 1200);
     } else if (chatStep === 1) {
       simulateBotTyping(() => {
-        addChatMessage('Entendi. E qual é o maior gargalo hoje: volume de leads, tempo de resposta, ou qualidade dos leads que chegam no comercial?', 'bot');
+        addChatMessage('Faz sentido. E hoje vocês usam algum sistema para gerenciar isso — CRM, ERP, algo próprio — ou ainda é tudo no manual/planilha?', 'bot');
         chatStep++;
       }, 1400);
     } else if (chatStep === 2) {
       simulateBotTyping(() => {
-        addChatMessage('Perfeito. Com base nisso, posso mostrar exatamente como um agente de IA personalizado resolveria esse gargalo no seu processo. Quer agendar um diagnóstico gratuito de 30 minutos?', 'bot');
+        addChatMessage('Perfeito. Com essas informações já consigo ter uma ideia clara do que construir para resolver. Quer agendar 30 minutos de diagnóstico para a gente mapear isso em detalhe?', 'bot');
         setTimeout(() => {
           addChatMessage('<button class="btn-primary" data-open-modal>Agendar Diagnóstico Gratuito</button>', 'bot', true);
-          // Attach event listener to new button
           const newBtn = chatMessages.querySelector('button[data-open-modal]');
           if (newBtn) newBtn.addEventListener('click', openModal);
         }, 500);
@@ -229,11 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const rotatingEl = document.getElementById('rotatingText');
   if (rotatingEl && typeof gsap !== 'undefined') {
     const phrases = [
-      'agentes de IA que qualificam',
-      'sistemas que geram demanda',
-      'leads prontos para fechar',
-      'inteligência que escala o comercial',
-      'automação construída para o seu nicho'
+      'sistemas que eliminam gargalos',
+      'agentes de IA sob medida',
+      'softwares próprios que escalam',
+      'automação de qualquer processo',
+      'tecnologia que acompanha o crescimento'
     ];
     let idx = 0;
 
