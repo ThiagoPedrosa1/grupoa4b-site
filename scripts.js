@@ -156,19 +156,19 @@ document.addEventListener('DOMContentLoaded', () => {
     // Bot Script Logic
     if (chatStep === 0) {
       simulateBotTyping(() => {
-        addChatMessage('Ótimo! Pra eu entender melhor, qual o segmento da sua empresa?', 'bot');
+        addChatMessage('Certo! E hoje, como vocês qualificam os leads que chegam — de forma manual ou já têm alguma automação?', 'bot');
         chatStep++;
       }, 1200);
     } else if (chatStep === 1) {
       simulateBotTyping(() => {
-        addChatMessage('Perfeito! Quantos leads vocês recebem por mês hoje?', 'bot');
+        addChatMessage('Entendi. E qual é o maior gargalo hoje: volume de leads, tempo de resposta, ou qualidade dos leads que chegam no comercial?', 'bot');
         chatStep++;
-      }, 1200);
+      }, 1400);
     } else if (chatStep === 2) {
       simulateBotTyping(() => {
-        addChatMessage('Entendo. Com a nossa IA, esses leads seriam filtrados, qualificados e acompanhados automaticamente. Posso te mostrar isso em um diagnóstico gratuito por call?', 'bot');
+        addChatMessage('Perfeito. Com base nisso, posso mostrar exatamente como um agente de IA personalizado resolveria esse gargalo no seu processo. Quer agendar um diagnóstico gratuito de 30 minutos?', 'bot');
         setTimeout(() => {
-          addChatMessage('<button class="btn-primary" data-open-modal>Agendar Diagnóstico</button>', 'bot', true);
+          addChatMessage('<button class="btn-primary" data-open-modal>Agendar Diagnóstico Gratuito</button>', 'bot', true);
           // Attach event listener to new button
           const newBtn = chatMessages.querySelector('button[data-open-modal]');
           if (newBtn) newBtn.addEventListener('click', openModal);
@@ -229,11 +229,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const rotatingEl = document.getElementById('rotatingText');
   if (rotatingEl && typeof gsap !== 'undefined') {
     const phrases = [
-      'mais agendamentos',
-      'leads ultra qualificados',
-      'zero leads perdidos',
-      'vendas no piloto automático',
-      'crescimento sem inchar a equipe'
+      'agentes de IA que qualificam',
+      'sistemas que geram demanda',
+      'leads prontos para fechar',
+      'inteligência que escala o comercial',
+      'automação construída para o seu nicho'
     ];
     let idx = 0;
 
