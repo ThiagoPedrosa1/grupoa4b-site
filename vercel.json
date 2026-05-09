@@ -1,6 +1,10 @@
 {
   "version": 2,
   "cleanUrls": true,
+  "framework": null,
+  "buildCommand": "echo 'Static only'",
+  "installCommand": "echo 'No install'",
+  "outputDirectory": ".",
   "rewrites": [
     { "source": "/obrigado", "destination": "/obrigado.html" },
     { "source": "/diagnostico", "destination": "/diagnostico.html" }
