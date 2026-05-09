@@ -173,7 +173,7 @@ img { max-width: 100%; display: block; }
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 60px;
   position: relative;
   overflow: hidden;
@@ -430,6 +430,11 @@ section {
   .pain-item {
     text-align: left;
   }
+}
+.pain-list--centered {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 /* ---- VALUE PROPOSITION ---- */
