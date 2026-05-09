@@ -6,6 +6,7 @@
   "installCommand": "echo 'No install'",
   "outputDirectory": ".",
   "rewrites": [
-    { "source": "/obrigado", "destination": "/obrigado.html" }
+    { "source": "/obrigado", "destination": "/obrigado.html" },
+    { "source": "/diagnostico", "destination": "/diagnostico.html" }
   ]
 }
