@@ -156,17 +156,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Bot Script Logic
     if (chatStep === 0) {
       simulateBotTyping(() => {
-        addChatMessage('Entendido! Esse gargalo é mais na área comercial, na operação interna ou nos dois?', 'bot');
+        addChatMessage('Entendido! Isso é mais no funil de captação (gerar leads), aquisição (converter/fechar) ou na entrega (operar e atender clientes)?', 'bot');
         chatStep++;
       }, 1200);
     } else if (chatStep === 1) {
       simulateBotTyping(() => {
-        addChatMessage('Faz sentido. E hoje vocês usam algum sistema para gerenciar isso — CRM, ERP, algo próprio — ou ainda é tudo no manual/planilha?', 'bot');
+        addChatMessage('Faz sentido. E hoje quem faz essa tarefa é uma pessoa, você mesmo, ou já tem alguma ferramenta ajudando?', 'bot');
         chatStep++;
       }, 1400);
     } else if (chatStep === 2) {
       simulateBotTyping(() => {
-        addChatMessage('Perfeito. Com essas informações já consigo ter uma ideia clara do que construir para resolver. Quer agendar 30 minutos de diagnóstico para a gente mapear isso em detalhe?', 'bot');
+        addChatMessage('Perfeito. Tenho clareza de onde um agente de IA resolveria isso. Quer agendar 30 minutos para a gente mapear os 3 funis e definir o que implementar primeiro?', 'bot');
         setTimeout(() => {
           addChatMessage('<button class="btn-primary" data-open-modal>Agendar Diagnóstico Gratuito</button>', 'bot', true);
           const newBtn = chatMessages.querySelector('button[data-open-modal]');
@@ -228,11 +228,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const rotatingEl = document.getElementById('rotatingText');
   if (rotatingEl && typeof gsap !== 'undefined') {
     const phrases = [
-      'sistemas que eliminam gargalos',
-      'agentes de IA sob medida',
-      'softwares próprios que escalam',
-      'automação de qualquer processo',
-      'tecnologia que acompanha o crescimento'
+      'captação automatizada',
+      'aquisição sem SDR humano',
+      'entrega que escala sozinha',
+      'IA substituindo tarefas repetitivas',
+      'agentes nos 3 funis do negócio'
     ];
     let idx = 0;
 
